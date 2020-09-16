@@ -1,19 +1,19 @@
 html{
 	background: url(../img/main.jpg) no-repeat;
-	background-size: 100% auto;	
+	background-size: 100vw 100vh;	
 }
 #title h1{
 	display: inline-block;
 	margin: 0;
 	float: left;
 	padding: 1%;
-	font-size:300%;
+	font-size:6vw;
 	line-height: 100%; 
 	vertical-align: middle;
 }
 #title img{
 	display: inline-block;
-	max-width: 55px;
+	max-width:6vw;
 	height:auto;
 	border-radius: 100%;
 	float: left;
@@ -23,9 +23,13 @@ html{
 #nav-button{
 	display:inline-block;
 	float: right;	
-	padding: 3%;
-	border-radius: 10%;
+	padding: 1%;
+	margin: 0;
+	padding: 1%;
 	cursor: pointer;
+}
+.fa-bars{
+	font-size: 6vw;
 }
 nav{
 	
@@ -39,9 +43,10 @@ nav a{
 	display:block;
 	text-decoration:none;
 	color: rgba(0,0,0,1);
-	font-size: 140%;
+	font-size: 5vw;
 	opacity: 0.8;
 	padding: 1%;
+	border-top: solid rgba(255,255,255,.6) ;
 	background-color: rgba(255,255,255,.5);
 }
 nav a:hover{
@@ -58,7 +63,7 @@ nav a:hover{
 	font-variant: small-caps;
 	font-size: 2vw;
 	position: absolute;
-	
+
 	margin: 0 auto;
 	text-align: center;
 }
