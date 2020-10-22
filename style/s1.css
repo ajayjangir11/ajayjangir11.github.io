@@ -1,5 +1,5 @@
 html{
-	color: rgba(255,255,255,1);
+	color: rgba(251,245,124,1);
 	background: url(../img/main.jpg) no-repeat center fixed;
 	background-size: cover;	
 }
@@ -30,11 +30,11 @@ header #logo img{
 	width: 150%;
 	height:auto;
 	border-radius: 100%;
-	animation: rotation linear 2s infinite alternate;
+	animation: rotation linear 10s infinite alternate;
 }
 @keyframes rotation{
-	from{transform:rotateY(0deg);}
-	to{transform: rotateY(90deg);}
+	from{transform:rotateY(-360deg);}
+	to{transform: rotateY(360deg);}
 }
 header #logo img:hover{
 	animation-play-state: paused;
@@ -100,7 +100,7 @@ section{
 }
 .Line2{
 	font-size: 45%;
-	color: rgba(251,245,124,1);
+	color: rgba(255,255,255,1);
 }
 #About{
 	font-size: 50%;
@@ -111,14 +111,17 @@ section{
 .fa-twitter{
 	color: rgba(44,170,225,1);
 }
-.fa-google-plus{
-	color: rgba(206,68,55,1);
+.fa-behance{
+	color: rgba(0,0,0,1);
 }
 .fa-pinterest{
 	color: rgba(238,27,34,1);
 }
-.fa-youtube{
-	color: rgba(254,0,0,1);
+.fa-linkedin-in{
+	color: rgba(255,255,255,1);
+}
+.fa-dribbble{
+	color: rgba(253,126,20,1);
 }
 .social{
 	display: flex;
