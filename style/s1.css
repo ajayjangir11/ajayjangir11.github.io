@@ -1,0 +1,169 @@
+html{
+	color: rgba(255,255,255,1);
+	background: url(../img/main.jpg) no-repeat center fixed;
+	background-size: cover;	
+}
+*{
+	font-family:Raleway,sans-serif;
+	padding: 0;
+	margin: auto;
+	box-sizing: border-box;
+	justify-content: center;
+}
+#container{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+header{
+	height:293.36px;
+	width: 94.93%;
+	display: flex;
+	flex-direction: row-reverse;
+}
+header #logo{
+	padding: 5%;
+	width:38.19%;
+	height:181.31px;
+}
+header #logo img{
+	width: 150%;
+	height:auto;
+	border-radius: 100%;
+	animation: rotation linear 2s infinite alternate;
+}
+@keyframes rotation{
+	from{transform:rotateY(0deg);}
+	to{transform: rotateY(90deg);}
+}
+header #logo img:hover{
+	animation-play-state: paused;
+}
+header nav{
+	display: flex;
+	flex-direction: column;
+	width: 61.81%;
+	height:293.36px;
+	padding: 5%;
+}
+header nav a{
+	text-align: center;
+	text-decoration:none;
+	color: rgba(255,255,255,1);
+	font-size: 150%;
+}
+@keyframes goright{
+	from{transform: translate(-50px,0);}
+	to{transform: translate(50px,0);}
+}
+@keyframes goleft{
+	from{transform: translate(50px,0);}
+	to{transform: translate(-50px,0);}
+}
+nav a.left_link{
+	animation: goright 2s infinite alternate linear;
+}
+nav a.right_link{
+	animation: goleft 2s infinite alternate linear; 
+}
+nav a:hover{
+	animation-play-state: paused;
+}
+#active{
+	color: rgba(245,205,180,1);
+}
+#main{
+	width: 94.93%;
+	height: 494.66px;
+	font-size: 500%;
+	text-align: center;
+}
+section{
+	display: flex;
+	height: inherit;
+	flex-direction: column;
+}
+.work img{
+	width: 75%;
+	border: solid white; 
+	height: auto;	
+}
+.work img:hover{
+	animation: fade_out 3s alternate infinite;
+}
+@keyframes fade_out{
+	from{opacity: 100%;}
+	to{opacity:50%}
+}
+.Line1{
+	font-size: 55%;
+}
+.Line2{
+	font-size: 45%;
+	color: rgba(251,245,124,1);
+}
+#About{
+	font-size: 50%;
+}
+.fa-facebook{
+	color: rgba(72,103,170,1);
+}
+.fa-twitter{
+	color: rgba(44,170,225,1);
+}
+.fa-google-plus{
+	color: rgba(206,68,55,1);
+}
+.fa-pinterest{
+	color: rgba(238,27,34,1);
+}
+.fa-youtube{
+	color: rgba(254,0,0,1);
+}
+.social{
+	display: flex;
+	flex-direction: row;
+}
+.social a{
+	padding: 5%;
+	text-decoration: none;
+}
+@media only screen and (min-width: 768px){
+	#container{
+		flex-direction: row;
+	}
+	header{
+		flex-direction:column;
+		width:38.19%;
+		height:768px;
+	}
+	header #logo{
+		width:61.81%;
+		height: 181.31px;
+	}
+	header nav{
+		height:293.36px; 
+	}
+	#main{
+		overflow-y: auto;
+		width: 61.81%;
+		height: 100vh;
+	}
+}
+@media only screen and (min-width: 992px){
+	header #logo{
+		height: 234.19px;
+	}
+	header nav{
+		height:378.93px; 
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	header #logo{
+		height: 283.3px;
+	}
+	header nav{
+		height:458.38px; 
+	}
+}
